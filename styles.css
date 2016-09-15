@@ -1,0 +1,137 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+section {
+  position: relative;
+}
+
+header {
+  height: 523px;
+  position: relative; /* for absolute children */
+  background-image: url('http://unsplash.it/1300/600');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 96, 172, .8);
+  /*pointer-events: none; */
+  /* pointer events only makes it click-through-able */
+}
+
+nav {
+  padding-top: 10px;
+  position: relative; /* puts into stacking order since header:before is absolute */
+}
+
+.brand {
+  margin-left: 3px;
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo {
+  width: 45px;
+  display: inline-block;
+  vertical-align: middle;
+  /*background-image: url('images/logo.png');*/
+}
+
+.company-name {
+  margin-left: 8px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-family: 'Myriad', 'Open Sans', Arial, sans-serif;
+}
+
+.main-nav {
+  font-size: 18px;
+  padding: 8px 0;
+  margin: 0 30px 0 0;
+  display: inline-block;
+  list-style: none;
+  float: right;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.main-nav li {
+  padding-left: 12px;
+  display: inline-block;
+}
+
+.main-nav li i {
+  vertical-align: middle;
+  margin-bottom: 5px;
+  transform: scaleX(-1);
+  filter: flipH;
+}
+
+.main-nav a {
+  color: rgba(0,0,0, 0.6);
+  text-decoration: none;
+  transition: color 150ms ease-in-out;
+}
+
+.main-nav li:hover a {
+  color: #ffffff;
+}
+
+header h1,
+header h3 {
+  position: relative;
+  text-align: center;
+}
+
+header h1 {
+  color: #ffffff;
+  font-family: 'Myriad', 'Open Sans', Arial, sans-serif;
+  font-size: 106px;
+  text-transform: uppercase;
+  margin: 130px 0 0;
+  letter-spacing: -5px;
+}
+
+header h3 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14.5px;
+  color: rgba(0, 0, 0, 0.7);
+  margin: -17px 0 0;
+  padding: 0;
+}
+
+#content {
+  background-color: tomato;
+}
+
+#content .container {
+  background-color: gold;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
