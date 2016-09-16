@@ -18,6 +18,10 @@ section {
   position: relative;
 }
 
+img {
+  width: 100%;
+}
+
 header {
   height: 523px;
   position: relative; /* for absolute children */
@@ -62,7 +66,7 @@ nav {
   margin-left: 8px;
   vertical-align: middle;
   text-transform: uppercase;
-  font-family: 'Myriad', 'Open Sans', Arial, sans-serif;
+  font-family: 'Myriad Pro', 'Open Sans', Arial, sans-serif;
 }
 
 .main-nav {
@@ -122,13 +126,112 @@ header h3 {
   padding: 0;
 }
 
-#content {
-  background-color: tomato;
+/*
+####### main content area
+*/
+
+article {
+  width: 625px;
+  padding-bottom: 100px;
+  float: left;
+  color: #5E686F;
+  font-family: "Open Sans", Helvetica, sans-serif;
 }
 
-#content .container {
-  background-color: gold;
+p {
+  margin: 26px 0 22px;
+  line-height: 1.65;
 }
+
+p a {
+  color: #A4B3BE;
+}
+
+p a:hover {
+  color: #0067AF;
+}
+
+blockquote {
+  padding: 6px 20px;
+  font-size: 27px;
+  margin: 12px 5px;
+  border-left: 2px solid #D3D3D3;
+}
+
+blockquote p {
+  margin: 0;
+  color: #226CB0;
+  text-transform: uppercase;
+}
+
+.content .container {
+  padding: 64px 24.5px 0;
+}
+
+.content h1 {
+  font-family: "Oswald", Helvetica, sans-serif;
+  font-size: 62.5px;
+  line-height: 1.125;
+  text-transform: uppercase;
+  color: #0E3451;
+  margin: 0;
+}
+
+.content aside {
+  width: 280px;
+  height: 100px;
+  float: right;
+  background-color: orange;
+}
+
+.author {
+  font-size: 12px;
+  padding: 8px 4px;
+  list-style: none;
+  margin: 0;
+}
+.author a {
+  text-decoration: none;
+  color: #226CB0;
+  font-weight: bold;
+}
+
+.author a:hover {
+  text-decoration: underline;
+}
+
+.author li {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.author li span{
+  text-decoration: underline;
+}
+
+
+.author img {
+  width: 20px;
+  border-radius: 50%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.action-links {
+  list-style: none;
+  padding: 0;
+}
+
+.action-links li {
+  background-color: #A4B3BE;
+  padding: 7px 10px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/*
+##### utility classes
+*/
 
 .clearfix:after {
   content: "";
