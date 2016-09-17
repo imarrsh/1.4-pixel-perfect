@@ -18,10 +18,6 @@ body {
   margin: 0 auto;
 }
 
-section {
-  position: relative;
-}
-
 img {
   width: 100%;
   display: block;
@@ -35,6 +31,14 @@ ul {
 
 ul li {
   margin: 0
+}
+
+aside h3 {
+  font-size: 18.5px;
+  margin: 0;
+  font-family: "Oswald", Helvetica, sans-serif;
+  color: #226CB0;
+  text-transform: uppercase;
 }
 
 header {
@@ -147,7 +151,6 @@ header h3 {
 
 article {
   width: 625px;
-  padding-bottom: 100px;
   float: left;
   color: #5E686F;
   font-family: "Open Sans", Helvetica, sans-serif;
@@ -158,11 +161,11 @@ p {
   line-height: 1.65;
 }
 
-p a {
+.content a {
   color: #A4B3BE;
 }
 
-p a:hover {
+.content a:hover {
   color: #0067AF;
 }
 
@@ -195,7 +198,11 @@ blockquote p {
 .content aside {
   width: 280px;
   float: right;
-  background-color: #c3c3c3;
+}
+
+aside p {
+  margin-top: 6px;
+  line-height: 1.75;
 }
 
 .author {
@@ -264,9 +271,12 @@ blockquote p {
 .action-links li:hover i {
   background-color: #0E3450;
 }
+.action-links li:hover a {
+  color: #ffffff;
+}
 
 .author-profile {
-  margin: 22px 0 0;
+  margin: 18px 0 50px;
   text-align: center;
 }
 
@@ -277,10 +287,11 @@ blockquote p {
 }
 
 .author-profile h4 {
+  font-size: 16px;
   color: #226CB0;
   text-transform: uppercase;
   font-weight: normal;
-  margin: 16px 0 0;
+  margin: 7px 0 0;
 }
 
 .author-profile span {
@@ -292,7 +303,7 @@ blockquote p {
 }
 
 .author-profile ul {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .author-profile li {
@@ -304,6 +315,105 @@ blockquote p {
 .author-profile li:last-child {
   border: none;
 }
+
+.ad {
+  text-align: right;
+}
+
+.ad a {
+  font-size: 14px;
+}
+
+aside section {
+  margin-top: 47px;
+  color: #A4B3BE;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+#more-posts {
+  margin: 65px 0 0;
+  text-align: center;
+}
+
+#more-posts h1 {
+  border-top: 1px solid #E1E7EA;
+  padding: 35px 0;
+  font-weight: normal;
+}
+
+#more-posts ul {
+  text-align: left;
+}
+
+#more-posts li {
+  padding: 20px;
+  position: relative;
+  width:25%;
+  float: left;
+  height: 330px;
+}
+
+#more-posts li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(34, 108, 176, 0.8);
+}
+
+#more-posts h2 {
+  margin: 0;
+  position: relative;
+  z-index: 10;
+  font-family: 'Oswald', Helvetica, sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: rgb(14, 52, 81);
+  font-weight: normal;
+  vertical-align: bottom;
+}
+
+#more-posts li:hover::after {
+  background-color: transparent;
+}
+
+#more-posts li:hover h2 {
+  color: #ffffff;
+  text-shadow: 3px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* placeholders! */
+#more-posts li:nth-child(1) {
+  background-image: url('http://unsplash.it/400/400');
+}
+
+#more-posts li:nth-child(2) {
+  background-image: url('http://unsplash.it/400/401');
+}
+
+#more-posts li:nth-child(3) {
+  background-image: url('http://unsplash.it/400/402');
+}
+
+#more-posts li:nth-child(4) {
+  background-image: url('http://unsplash.it/400/403');
+}
+
+#more-posts li {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;;
+}
+
+footer {
+  height: 100px;
+  background-color: #0E3451;
+}
+
 
 /*
 ##### utility classes
