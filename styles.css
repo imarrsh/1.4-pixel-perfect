@@ -390,6 +390,7 @@ aside section {
   color: rgb(14, 52, 81);
   font-weight: normal;
   vertical-align: bottom;
+  padding-right: 20px;
 }
 
 #more-posts li:hover::after {
@@ -498,6 +499,7 @@ footer li:last-child a {
 /* media queries */
 
 @media screen and (max-width: 960px){
+
   header h1 {
     font-size: 80px;
   }
@@ -505,6 +507,31 @@ footer li:last-child a {
   article {
     width: 60%;
     padding-right: 10px;
+  }
+
+}
+
+@media screen and (max-width: 810px){
+
+  #more-posts h2 {
+    font-size: 30px;
+  }
+
+  footer .subnav {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  footer .logo {
+    float: none;
+    display: block;
+    margin: 20px auto 10px;
+  }
+
+  footer span {
+    display: block;
+    text-align: center;
   }
 }
 
@@ -564,10 +591,18 @@ footer li:last-child a {
     padding-bottom: 20px;
   }
 
+  .main-nav {
+    margin: 0;
+  }
+
   header h1 {
     font-size: 36px;
     letter-spacing: -.08em;
     margin-top: 20px;
+  }
+
+  .content h1 {
+    font-size: 48px;
   }
 
   .company-name {
@@ -611,9 +646,20 @@ footer li:last-child a {
     padding-top: 50px;
   }
 
+  .author li:first-child, /* hiding author info */
+  .author li:nth-child(2) {
+    display: none;
+  }
+
+  .author-name {
+    display: none;
+  }
+
   .ad {
+    max-width: 320px;
     float: none;
     width: auto;
+    margin: 0 auto;;
   }
 
   aside section {
@@ -626,6 +672,7 @@ footer li:last-child a {
 
   #more-posts h1 {
     font-size: 30px;
+    padding-bottom: 0;
   }
 
   #more-posts ul {
@@ -646,6 +693,10 @@ footer li:last-child a {
   #more-posts h2 {
     font-size: 25px;
     color: #ffffff;
+  }
+
+  footer {
+    margin-top: 80px;
   }
 
 }
