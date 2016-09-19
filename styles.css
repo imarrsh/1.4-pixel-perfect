@@ -294,11 +294,21 @@ aside p {
 }
 
 .author-profile span {
+  position: relative;
   border-radius: 50%;
   display: inline-block;
   width: 84px;
   height: 84px;
   overflow: hidden;
+}
+.author-profile span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 96, 172, .6);
 }
 
 .author-profile ul {
