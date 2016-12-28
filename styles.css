@@ -378,7 +378,7 @@ aside section {
   height: 330px;
 }
 
-#more-posts li::after {
+#more-posts li::before {
   content: "";
   display: block;
   position: absolute;
@@ -393,7 +393,7 @@ aside section {
   margin: 0;
   position: absolute;
   bottom: 12px;
-  z-index: 10;
+  /*z-index: 10;*/
   font-family: 'Oswald', Helvetica, sans-serif;
   font-size: 34px;
   text-transform: uppercase;
@@ -403,7 +403,7 @@ aside section {
   padding-right: 20px;
 }
 
-#more-posts li:hover::after {
+#more-posts li:hover::before {
   background-color: transparent;
 }
 
